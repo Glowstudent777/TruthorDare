@@ -1,2 +1,2 @@
-# TruthorDare
-Truth or Dare Discord bot
+# Truth or Dare
+Simple Truth or Dare Discord bot
