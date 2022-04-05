@@ -1,0 +1,26 @@
+{
+    "Truths": {
+        "Ratings": [
+            {
+                "PG": [
+                    {
+                        "ID": "PG-1",
+                        "Truth": "What is the most important thing in life?"
+                    }
+                ],
+                "PG13": [
+                    {
+                        "ID": "PG13-1",
+                        "Truth": "Coming Soon"
+                    }
+                ],
+                "R": [
+                    {
+                        "ID": "R-1",
+                        "Truth": "Coming Soon"
+                    }
+                ]
+            }
+        ]
+    }
+}

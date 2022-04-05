@@ -1,0 +1,42 @@
+{
+    "Dares": {
+        "Ratings": [
+            {
+                "PG": [
+                    {
+                        "ID": "PG-1",
+                        "Dare": "DM someone \"hi\" and respond with \"banana\" to everything they say"
+                    },
+                    {
+                        "ID": "PG-2",
+                        "Dare": "Show everyone the funniest meme in your camera roll"
+                    },
+                    {
+                        "ID": "PG-3",
+                        "Dare": "Be annoying for the next minute"
+                    }
+                ],
+                "PG13": [
+                    {
+                        "ID": "PG13-1",
+                        "Dare": "Send your partner a fake breakup message."
+                    },
+                    {
+                        "ID": "PG13-2",
+                        "Dare": "Send a paragraph to your crush about 3 things you love about them."
+                    },
+                    {
+                        "ID": "PG13-3",
+                        "Dare": "Have you ever been rejected by someone?"
+                    }
+                ],
+                "R": [
+                    {
+                        "ID": "R-1",
+                        "Dare": "Coming Soon"
+                    }
+                ]
+            }
+        ]
+    }
+}
