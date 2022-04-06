@@ -1,21 +1,11 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
-const { Dares } = require('../../config/dare.json');
+const { MessageEmbed, Message } = require('discord.js');
+const { Dares } = require('../../../config/dare.json');
 
 module.exports = {
-    data: new SlashCommandBuilder()
-        .setName('dare')
+    name: 'dare',
+    description: "Gives a dare that has to be completed.",
 
-        .addStringOption(option =>
-            option.setName('rating')
-                .setDescription('The maturity level of the topics the question can relate to.')
-                .setRequired(false)
-                .addChoice('PG', 'pg')
-                .addChoice('PG13', 'pg13')
-                .addChoice('R', 'r'))
-
-        .setDescription('Gives a dare that has to be completed.'),
-    async execute(interaction, client, args) {
+    async execute(message, client) {;
 
         const dares = {
             "PG": Dares.Ratings.map(ratings => ratings.PG.map(pg => pg)).flat(),
@@ -23,7 +13,15 @@ module.exports = {
             "R": Dares.Ratings.map(ratings => ratings.R.map(r => r)).flat(),
         }
 
-        let rating = interaction.options.getString('rating');
+        let args = message.content.trim().split(/ +/g);
+
+        if (args[2]) return message.reply('Too many arguments.');
+
+        let rating = args[1];
+        let possibleRatings = ['pg', 'pg13', 'r'];
+        if (!possibleRatings.includes(rating) && rating !== undefined) {
+            return message.reply('Please specify a rating. Possible ratings are: `pg`, `pg13`, and `r`.');
+        }
 
         if (!dares.PG) {
             dares.PG = "Nothing has been added for PG.";
@@ -63,7 +61,7 @@ module.exports = {
         }
 
         // If no rating pg and pg13 are selected, then select a random dare
-        if (!rating) {
+        if (!rating || rating === undefined) {
             choice = Math.floor(Math.random() * 2) + 1; // 1 or 2
 
             if (choice === 1) {
@@ -81,17 +79,11 @@ module.exports = {
             }
         }
 
-        // Dares.Ratings.map(ratings => ratings.PG.map(pg => pg)).flat().forEach(pg => {
-        //     const dare = pg.Dare;
-        //     const id = pg.ID;
-        //     console.log(`[${id}] ${dare}`);
-        // });
-
         const embed = new MessageEmbed()
             .setColor('#4ecdc4')
             .setTitle(`${dare}`)
             .setFooter({ text: `Type: DARE | Rating: ${ratingDares} | ID: ${ID}` })
-        return interaction.reply({ embeds: [embed] });
+        return message.reply({ embeds: [embed] });
 
     },
 };

@@ -14,6 +14,178 @@
                     {
                         "ID": "PG-3",
                         "Dare": "Be annoying for the next minute"
+                    },
+                    {
+                        "ID": "PG-4",
+                        "Dare": "Do an impression of your favorite celebrity"
+                    },
+                    {
+                        "ID": "PG-5",
+                        "Dare": "Close your eyes and send a blind text to a random person"
+                    },
+                    {
+                        "ID": "PG-6",
+                        "Dare": "Go grab a broom and do your best tango"
+                    },
+                    {
+                        "ID": "PG-7",
+                        "Dare": "Give a 3 minute stand-up comedy routine"
+                    },
+                    {
+                        "ID": "PG-8",
+                        "Dare": "Break dance"
+                    },
+                    {
+                        "ID": "PG-9",
+                        "Dare": "Make up a story about the item to your right"
+                    },
+                    {
+                        "ID": "PG-10",
+                        "Dare": "Do your best president impression"
+                    },
+                    {
+                        "ID": "PG-11",
+                        "Dare": "Yell out the first word that comes to your mind right now"
+                    },
+                    {
+                        "ID": "PG-12",
+                        "Dare": "Pound on your chest and act like a gorilla for the next minute"
+                    },
+                    {
+                        "ID": "PG-13",
+                        "Dare": "Sing everything you say for the next 10 minutes"
+                    },
+                    {
+                        "ID": "PG-14",
+                        "Dare": "Say the alphabet backwards in 15 seconds"
+                    },
+                    {
+                        "ID": "PG-15",
+                        "Dare": "Go to the neighbour's house and ask for a banana"
+                    },
+                    {
+                        "ID": "PG-16",
+                        "Dare": "Go up to someone random and ask for a hug"
+                    },
+                    {
+                        "ID": "PG-17",
+                        "Dare": "Set your cell phone language to Chinese for the next 10 minutes"
+                    },
+                    {
+                        "ID": "PG-18",
+                        "Dare": "Act like your favourite Disney character for the rest of the game"
+                    },
+                    {
+                        "ID": "PG-19",
+                        "Dare": "Sing 'Twinkle Twinkle, Little Star' while beat boxing"
+                    },
+                    {
+                        "ID": "PG-20",
+                        "Dare": "Make a poem using the words orange and moose"
+                    },
+                    {
+                        "ID": "PG-21",
+                        "Dare": "Unbuckle your own belt using your elbows"
+                    },
+                    {
+                        "ID": "PG-22",
+                        "Dare": "Make up a country song of the top of your head"
+                    },
+                    {
+                        "ID": "PG-23",
+                        "Dare": "Get on all fours and act like a dog until your next turn"
+                    },
+                    {
+                        "ID": "PG-24",
+                        "Dare": "Make up a short rap about another player"
+                    },
+                    {
+                        "ID": "PG-25",
+                        "Dare": "Act like Romeo from 'Romeo and Juliet' (pick who you want to be Juliet)"
+                    },
+                    {
+                        "ID": "PG-26",
+                        "Dare": "Do an impression of someone until another player can guess who you are"
+                    },
+                    {
+                        "ID": "PG-27",
+                        "Dare": "Say 'ya heard meh' after everything you say for the next 5 minutes"
+                    },
+                    {
+                        "ID": "PG-28",
+                        "Dare": "Act like you do not understand your own language until your next turn (come up with your own language)"
+                    },
+                    {
+                        "ID": "PG-29",
+                        "Dare": "Use the letters of the name of another player to describe them"
+                    },
+                    {
+                        "ID": "PG-30",
+                        "Dare": "Only use sign language for the next round"
+                    },
+                    {
+                        "ID": "PG-31",
+                        "Dare": "Do pushups until it's your turn again"
+                    },
+                    {
+                        "ID": "PG-32",
+                        "Dare": "Wear a finger moustache for the next 5 minutes"
+                    },
+                    {
+                        "ID": "PG-33",
+                        "Dare": "Only use your elbows and knees to go make a sandwich"
+                    },
+                    {
+                        "ID": "PG-34",
+                        "Dare": "Write a Facebook (or other social media) post only using your toes"
+                    },
+                    {
+                        "ID": "PG-35",
+                        "Dare": "Paint your toenails only using your teeth"
+                    },
+                    {
+                        "ID": "PG-36",
+                        "Dare": "Prank call someone you know."
+                    },
+                    {
+                        "ID": "PG-37",
+                        "Dare": "Ask the neighbors to borrow a cup of sugar."
+                    },
+                    {
+                        "ID": "PG-38",
+                        "Dare": "Post a YouTube video of you singing a currently popular song."
+                    },
+                    {
+                        "ID": "PG-39",
+                        "Dare": "Go outside and shout at the top of your lungs,`I am [your name]! Hear me roar!`"
+                    },
+                    {
+                        "ID": "PG-40",
+                        "Dare": "Moonwalk while a friend takes a video."
+                    },
+                    {
+                        "ID": "PG-41",
+                        "Dare": "Paint each toenail and fingernail a different color and keep the polish on for a week."
+                    },
+                    {
+                        "ID": "PG-42",
+                        "Dare": "Do the silliest dance that you can think of"
+                    },
+                    {
+                        "ID": "PG-43",
+                        "Dare": "Call someone random, and talk freaky to them"
+                    },
+                    {
+                        "ID": "PG-44",
+                        "Dare": "Exchange shirts with the person next to you"
+                    },
+                    {
+                        "ID": "PG-45",
+                        "Dare": "Try licking your elbow."
+                    },
+                    {
+                        "ID": "PG-46",
+                        "Dare": "Crack an egg on your head."
                     }
                 ],
                 "PG13": [
@@ -28,6 +200,10 @@
                     {
                         "ID": "PG13-3",
                         "Dare": "Have you ever been rejected by someone?"
+                    },
+                    {
+                        "ID": "PG13-4",
+                        "Dare": "Ask your crush out on a date"
                     }
                 ],
                 "R": [

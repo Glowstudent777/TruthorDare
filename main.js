@@ -15,6 +15,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 // // Collections
 client.commands = new Collection();
+client.pcommands = new Collection();
 client.devCommands = new Collection();
 
 // Statcord
@@ -39,13 +40,23 @@ const transaction = Sentry.startTransaction({
   });
   transaction.finish();
 
-// Load all commands
-const commandFolders = fs.readdirSync('./commands')
+// Load all interaction commands
+const commandFolders = fs.readdirSync('./commands/interaction')
 for (const folder of commandFolders) {
-	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+	const commandFiles = fs.readdirSync(`./commands/interaction/${folder}`).filter(file => file.endsWith('.js'));
 	for (const file of commandFiles) {
-		const command = require(`./commands/${folder}/${file}`);
+		const command = require(`./commands/interaction/${folder}/${file}`);
 		client.commands.set(command.data.name, command)
+	}
+}
+
+// Load all prefix commands
+const pcommandFolders = fs.readdirSync('./commands/prefix')
+for (const folder of pcommandFolders) {
+	const pcommandFiles = fs.readdirSync(`./commands/prefix/${folder}`).filter(file => file.endsWith('.js'));
+	for (const file of pcommandFiles) {
+		const pcommand = require(`./commands/prefix/${folder}/${file}`);
+		client.pcommands.set(pcommand.name, pcommand)
 	}
 }
 
