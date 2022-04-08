@@ -1,3 +1,9 @@
+/* This program is free software. It comes without any warranty, to
+     * the extent permitted by applicable law. You can redistribute it
+     * and/or modify it under the terms of the Do What The Fuck You Want
+     * To Public License, Version 2, as published by Sam Hocevar. See
+     * http://www.wtfpl.net/ for more details. */
+
 // keepAlive server
 const keepAlive = require('./server');
 
@@ -9,9 +15,9 @@ const Statcord = require("statcord.js");
 const Sentry = require("@sentry/node");
 const Tracing = require("@sentry/tracing");
 
-
 // Intents
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS] });
+client.client = client;
 
 // // Collections
 client.commands = new Collection();

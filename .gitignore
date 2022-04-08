@@ -2,3 +2,5 @@ node_modules/
 .git/
 .env
 dev/
+events/devCommandHandler.js
+deploy-commands.js

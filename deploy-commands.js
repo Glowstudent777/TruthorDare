@@ -23,7 +23,7 @@ const rest = new REST({ version: '9' }).setToken(process.env.CLIENT_TOKEN);
         console.log('Started refreshing application (/) commands.');
 
         await rest.put(
-            Routes.applicationGuildCommands( clientID, devGuild),
+            Routes.applicationGuildCommands(clientID, devGuild),
             { body: commands },
         );
         console.log('Successfully reloaded application (/) commands.');

@@ -12,8 +12,8 @@ module.exports = {
         const command = client.pcommands.get(commandName) || client.pcommands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
         // Statcord
-        client.statcord.postCommand(pcommands.name, message.author.id, client);
-        console.log(`[${pcommands.name}] ${message.author.tag} (${message.author.id})`);
+        client.statcord.postCommand(commandName, message.author.id, client);
+        console.log(`[${commandName}] ${message.author.tag} (${message.author.id})`);
 
         try {
             command.execute(message, args, client);
