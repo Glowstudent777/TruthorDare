@@ -5,7 +5,9 @@ Customize the truths and dares in the [`truth.json`](https://github.com/Glowstud
 
 ### 💻 &nbsp;Configuration :
 
-When adding truths or dares just add a new entry like below
+Add or edit the truths and dares in the `json` files.
+
+Truths and Dares should look like this:
 ```json
 {
     "ID": "PG-22",
